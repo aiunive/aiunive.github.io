@@ -1,447 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Universe</title>
-    <style>
-        a {
-            font-size: 23px;
-        }
-        a:link {
-          color: rgb(46, 93, 162);
-          background-color: transparent;
-          text-decoration: none;
-        }
-        
-        a:visited {
-          color: purple;
-          background-color: transparent;
-          text-decoration: none;
-        }
-        
-        a:hover {
-          color: blue;
-          background-color: transparent;
-          text-decoration: underline;
-        }
-        
-        a:active {
-          color: purple;
-          background-color: transparent;
-          text-decoration: underline;
-        }
-
-        .chatgpt {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-
-        </style>
-
-
+<title>AI Universe</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-  a:link {
-    color: rgb(46, 93, 162);
-    background-color: transparent;
-    text-decoration: none;
+#body {
+  font-family: "Lato", sans-serif;
+  margin: 0% 20%;
+}
+.mySlides {display: none}
+
+.dropbtn {
+  background-color: #000000;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #000000;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}  
+
+li {
+  float:left;
+}
+
+  .chatgpt {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
-  
-  a:visited {
-    color: purple;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: blue;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  
-  a:active {
-    color: purple;
-    background-color: transparent;
-    text-decoration: underline;
-  }
+
 
   .MidJourney {
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
-  body {
-      margin: 0% 20%;
-  }
-
-
-  </style>
-
-
-<style>
-  a:link {
-    color: rgb(46, 93, 162);
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:visited {
-    color: purple;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: blue;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  
-  a:active {
-    color: purple;
-    background-color: transparent;
-    text-decoration: underline;
-  }
 
   .DALL·E {
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
-  body {
-      margin: 0% 20%;
+  .tinywow {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
-
-  </style>
-
-        <style>
-            a:link {
-              color: rgb(46, 93, 162);
-              background-color: transparent;
-              text-decoration: none;
-            }
-            
-            a:visited {
-              color: purple;
-              background-color: transparent;
-              text-decoration: none;
-            }
-            
-            a:hover {
-              color: blue;
-              background-color: transparent;
-              text-decoration: underline;
-            }
-            
-            a:active {
-              color: purple;
-              background-color: transparent;
-              text-decoration: underline;
-            }
-    
-            .tinywow {
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            }
-
-            body {
-                margin: 0% 20%;
-            }
-
-    
-            </style>
-
-
-
-
-
-<style>
-  a:link {
-    color: rgb(46, 93, 162);
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:visited {
-    color: purple;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: blue;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  
-  a:active {
-    color: purple;
-    background-color: transparent;
-    text-decoration: underline;
-  }
 
   .CopyAI {
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
-  body {
-      margin: 0% 20%;
-  }
 
 
-  </style>
-
-<style>
-  a:link {
-    color: rgb(46, 93, 162);
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:visited {
-    color: purple;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: blue;
-    background-color: transparent;
-    text-decoration: underline;
-  }
-  
-  a:active {
-    color: purple;
-    background-color: transparent;
-    text-decoration: underline;
-  }
 
   .MagicEraser  {
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
-  body {
-      margin: 0% 20%;
-  }
+li a {
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #5e735e;
+}
 
+.navbar {
+  background-color: #000000;
+  width: 100%;
+  top:0px;
+  left:0px;
+  position: fixed;
+}
 
-  </style>
+#chatgpt, #MidJourney, #dalle {
+    height:60px;
+}
 
+.aiLink {
+    font-size: 25px;
+    text-decoration: none;
+    color:rgb(119, 29, 158);
+}
 
+.aiLink:hover {
+    text-decoration:underline;
+    color: blue;
+}
 
-</head>   
-<body style="background-color:white;">
+.aiLink:visited {
+    color:rgb(255, 1, 1);
+}
 
-<h1> Welcome to The AI Universe!</h1>
-
-
-</body><p style="font-size:110%;">What's this website? you can find different types of useful AI's that can do many different things for you. 
-    each one has it's own unique job and they will for sure help you in your daily life. so what are you waiting for? take a look at our website and see which AI's the best for you. </p>
-
-
-    <br>
-    <div id="div1">
-    <h1 style="background-color:powderblue;" class="chatgpt">ChatGPT</h1>
-    <img src="Images/ChatGPT_logo.png" height="200px">
-    <p class="chatgpt">ChatGPT is a versatile language model that can perform a variety of tasks, including:
-
-        Answering questions: ChatGPT can provide factual information on a wide range of topics, such as science, history, sports, and more.
+</style>
         
-        Providing recommendations: Based on your input, ChatGPT can offer suggestions and recommendations for various products, services, or activities.
         
-        Engaging in small talk: ChatGPT can engage in casual conversation and make small talk on various topics, such as the weather, current events, or popular culture.
         
-        Generating text: ChatGPT can generate creative writing prompts, complete sentences, or even generate stories based on a given prompt.
-        
-        Translating languages: With the help of machine translation models, ChatGPT can translate text from one language to another.
-        
-        Providing customer service: ChatGPT can assist with basic customer service inquiries, such as tracking orders, providing product information, or answering frequently asked questions.
-        
-        Personalizing responses: ChatGPT can use contextual information to personalize its responses to you, creating a more natural and engaging conversation.
-        <br>
-        <br>
+  </head>   
+  <body>
 
-        <a href="https://openai.com/blog/chatgpt/" target="_blank"> Visit ChatGPT's website!</a>
+
+    <div class="navbar">
+      <ul>
+        <li><a href="#" class="dropbtn">HOME</a> </li> 
+          <li><div class="dropdown">
+            <button class="dropbtn">AI</button>
+            <div class="dropdown-content">
+            <a href="#chatgpt">ChatGPT</a>
+            <a href="#MidJourney">MidJourney</a>
+            <a href="#dalle">DALL·E</a>
+            </div>
+          </div>
+          </li>
+        <li><a href="#about" class="dropbtn">About</a> </li>
+      </ul>
+      
     </div>
+    
+    <div id="body">
+      <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+        <h2 class="w3-wide">WELCOME TO THE AI UNIVERSE</h2>
+        <p class="w3-justify">What's this website? you can find different types of useful AI's that can do many different things for you. each one has it's own unique job and they will help you with different stuff. so what are you waiting for? take a look at our website and see which AI's the best for you.
+    
+  <br>
+        <br>
+        <br>
+        <br>
+        <br>
         
-<br>
-<br>
-<br>
-<br>
-<br>
+        
 
-<div id="div2">
-  <h1 style="background-color:rgb(210, 212, 225);" class="MidJourney">MidJourney</h1>
-  <img src="Images/Midjourney.png" height="200px">
-<p class="MidJourney">Midjourney is an independent research lab that produces an artificial intelligence program under the same name that creates images from textual descriptions and Stable Diffusion.
-   It is speculated that the underlying technology is based on Stable Diffusion. The tool is currently in open beta, which it entered on July 12, 2022. pretty impresive if you ask me.
-   <br>
-    Users create artwork with Midjourney using Discord bot commands. This AI is amazing, its downsides are you only get a free trial (even though you can make alternative accounts) and it's only available in Discord for now.
-  <br>
-The creators and staff of MidJourney say it will be available in a website once it's out of beta.
-here's some impressive art made by MidJourney.
-
-
-<br>
-
-<br>
-
-<img src="Images/MidJourney_Art_1.png" height="200px">
-<img src="Images/MidJourney_Art_2.png" height="200px">
-<img src="Images/MidJourney_Art_3.png" height="200px">
-<img src="Images/MidJourney_Art_5.png" height="200px">
-
-
-
-<br>
-<br>
-<br>
-
-<a href="https://midjourney.com/" target="_blank"> Visit MidJourney's website to join their discord server!</a>
-
-<br>
-<br>
-
-
-</p>
-
-
-</div>
-
-<div id="div3">
-<h1 style="background-color:rgb(0, 0, 0); color:aliceblue" class="DALL·E">DALL·E</h1>
-<img src="Images/dalle.png" height="200px">
-
-<p class="DALL·E"> DALL-E 2 is an image generation model developed by OpenAI that can generate high-quality images from textual input. 
-  <br>
-  Given a textual description as input, DALL-E 2 uses a combination of natural language processing and computer vision techniques to create a corresponding image. 
-  The model can generate images of objects, scenes, and even abstract concepts that do not exist in the real world.
-
-  DALL-E 2 works by mapping the input text to a set of image features, which are then used to generate the corresponding image. The model uses a transformer-based architecture, similar to the ones used in large language models like MidJourney. A great free alternative for MidJourney.
-<br>
-<br>
-<br>
-
-<img src="Images/dalle_example_1.jpg" height="200px">
-<img src="Images/dall-e-2.jpg" height="200px">
-<img src="Images/dall-e-3.jpg" height="200px">
-<img src="Images/dall-e-4.jpg" height="150px">
-<br>
-<br>
-<br>
-<br>
-
-<a href="https://openai.com/dall-e-2/" target="_blank"> Visit DALL·E's website!</a>
-
-<br>
-<br>
-<br>
-
-</p>
-</div>
-
-<div id="div4">
-  <h1 style="background-color:rgb(177,12,252);" class="MagicEraser">MagicEraser</h1>
-  <img src="Images/MagicEraser.png" height="200px">
-  <p class="MagicEraser"> magic eraser uses AI to remove anything from an image, it can offer several benefits:
-<br>
-
-    Faster and more efficient editing: with its AI-powered magic, it can quickly identify and remove unwanted elements from an image, saving you time and effort For free.
-    <br>
-    More accurate results: AI algorithms can analyze an image in great detail, allowing them to identify and remove even small or complex elements with greater accuracy at no time.
-    
-    Versatility: magic erasers can remove a wide range of elements, from small blemishes to entire objects or people. This makes them a versatile tool for all kinds of image editing tasks.
-    <br>
-    Consistency: Because AI algorithms are programmed to perform a specific task in a consistent way, magic erasers uses AI to provide a more consistent results than manual editing methods, which can be affected by human error and inconsistency, plus it takes no time.
-    <br>
-    here we can see an AI generated image by DALL·E, removing the fox in less than 5 seconds.
-
-<br>
-<br>
-<br>
-
-<img src="Images/dall-e-2.jpg" height="250px">
-<img src="Images/MagicEraser_1.png" height="250px">
+        
+        <div id="chatgpt">
+        </div>
+            <h1 style="background-color:powderblue;" class="chatgpt">ChatGPT</h1>
+            <img src="Images/ChatGPT_logo.png" height="200px">
+            <p class="chatgpt">ChatGPT is a versatile language model that can perform a variety of tasks, including:
+        
+                Answering questions: ChatGPT can provide factual information on a wide range of topics, such as science, history, sports, and more.
+                
+                Providing recommendations: Based on your input, ChatGPT can offer suggestions and recommendations for various products, services, or activities.
+                
+                Engaging in small talk: ChatGPT can engage in casual conversation and make small talk on various topics, such as the weather, current events, or popular culture.
+                
+                Generating text: ChatGPT can generate creative writing prompts, complete sentences, or even generate stories based on a given prompt.
+                
+                Translating languages: With the help of machine translation models, ChatGPT can translate text from one language to another.
+                
+                Providing customer service: ChatGPT can assist with basic customer service inquiries, such as tracking orders, providing product information, or answering frequently asked questions.
+                
+                Personalizing responses: ChatGPT can use contextual information to personalize its responses to you, creating a more natural and engaging conversation.
+                <br>
+                <br>
+        
+                <a href="https://openai.com/blog/chatgpt/" target="_blank" class="aiLink"> Visit ChatGPT's website!</a>
+                
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <div id="MidJourney">
+        </div>
+          <h1 style="background-color:rgb(210, 212, 225);" class="MidJourney">MidJourney</h1>
+          <img src="Images/Midjourney.png" height="200px">
+        <p class="MidJourney">Midjourney is an independent research lab that produces an artificial intelligence program under the same name that creates images from textual descriptions and Stable Diffusion.
+           It is speculated that the underlying technology is based on Stable Diffusion. The tool is currently in open beta, which it entered on July 12, 2022. pretty impresive if you ask me.
+           <br>
+            Users create artwork with Midjourney using Discord bot commands. This AI is amazing, its downsides are you only get a free trial (even though you can make alternative accounts) and it's only available in Discord for now.
+          <br>
+        The creators and staff of MidJourney say it will be available in a website once it's out of beta.
+        here's some impressive art made by MidJourney.
+        
+        
+        <br>
+        
+        <br>
+        
+        <img src="Images/MidJourney_Art_1.png" height="200px">
+        <img src="Images/MidJourney_Art_2.png" height="200px">
+        <img src="Images/MidJourney_Art_3.png" height="200px">
+        
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <a href="https://midjourney.com/" class="aiLink" target="_blank"> Visit MidJourney's website to join their discord server!</a>
+        
+        <br>
+        <br>
+        <br>
+      <br>
+      <br>
 
 
-<br>
-<br>
-<br>
+        
+        </p>
+        
+        
+        
+        <div id="dalle">
+        </div>
+            <h1 style="background-color:rgb(0, 0, 0); color:aliceblue" class="DALL·E">DALL·E</h1>
+        <img src="Images/dalle.png" height="200px">
+        
+        <p class="DALL·E"> DALL-E 2 is an image generation model developed by OpenAI that can generate high-quality images from textual input. 
+          <br>
+          Given a textual description as input, DALL-E 2 uses a combination of natural language processing and computer vision techniques to create a corresponding image. 
+          The model can generate images of objects, scenes, and even abstract concepts that do not exist in the real world.
+        
+          DALL-E 2 works by mapping the input text to a set of image features, which are then used to generate the corresponding image. The model uses a transformer-based architecture, similar to the ones used in large language models like MidJourney. A great free alternative for MidJourney.
+        <br>
+        <br>
+        <br>
+        
+        <img src="Images/dalle_example_1.jpg" height="200px">
+        <img src="Images/dall-e-2.jpg" height="200px">
+        <img src="Images/dall-e-3.jpg" height="200px">
+      
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <a href="https://openai.com/dall-e-2/" class="aiLink" target="_blank"> Visit DALL·E's website!</a>
+        
+        <br>
+        <br>
+        <br>
+        
+        </p>
+        
+        <div id="div4">
+          <h1 style="background-color:rgb(177,12,252);" class="MagicEraser">MagicEraser</h1>
+          <img src="Images/MagicEraser.png" height="200px">
+          <p class="MagicEraser"> magic eraser uses AI to remove anything from an image, it can offer several benefits:
+        <br>
+        
+            Faster and more efficient editing: with its AI-powered magic, it can quickly identify and remove unwanted elements from an image, saving you time and effort For free.
+            <br>
+            More accurate results: AI algorithms can analyze an image in great detail, allowing them to identify and remove even small or complex elements with greater accuracy at no time.
+            
+            Versatility: magic erasers can remove a wide range of elements, from small blemishes to entire objects or people. This makes them a versatile tool for all kinds of image editing tasks.
+            <br>
+            Consistency: Because AI algorithms are programmed to perform a specific task in a consistent way, magic erasers uses AI to provide a more consistent results than manual editing methods, which can be affected by human error and inconsistency, plus it takes no time.
+            <br>
+            here we can see an AI generated image by DALL·E, removing the fox in less than 5 seconds.
+        
+        <br>
+        <br>
+        <br>
+        
+        <img src="Images/dall-e-2.jpg" height="250px">
+        <img src="Images/MagicEraser_1.png" height="250px">
+        
+        
+        <br>
+        <br>
+        <br>
+        
+        <a href="https://magicstudio.com/magiceraser"  class="aiLink" target="_blank"> Visit MagicEraser's website!</a>
+        
+        <br>
+        <br>
+        <br>
+        
+        
+          </p>
+        
+        
+        
+        
+        </div>
+        
+        
+        
+        
+        <div id="div5">
+        <h1 style="background-color:rgb(47, 61, 189);" class="tinywow">TinyWow</h1>
+        <img src="Images/tinywow.jpg" height="200px">
+        <p class="tinywow">TinyWow offers a huge selection of free, easy-to-use tools for PDF files, videos, images, and more. Convert word documents to PDF files, remove the background from an image, convert videos to GIF files, make memes, sharpen images, etc. 
+        <br>
+            An heaven for people that have to deal with different types of files on daily bases. The best thing about this website is that it shares its AI with its users for free which is amazing. but there's a question here. if it's a free to use website how do they make money? there's no ads or anything, do they sell data? well Their own site states "TinyWow is free. We don't have ads, we don't sell data. We currently have no plans to monetize. Why offer these tools for free? We operate two tech websites: Alphr & TechJunkie. We thought our users might find these tools helpful. For now, utilizing our existing infrastructure we are able to operate these tools at minimal additional cost. Building this and watching the growth has been fun, so we’re going to keep building free stuff.
+        <br>
+            I'll leave that up to your discretion.
+        <br>
+        <br>
+        <br>
+            <a href="https://tinywow.com/" class="aiLink" target="_blank"> Visit TinyWow's website!</a>
+            
+        </p>
+        </div>
+        
+        
+          <br>
+          <br>
+          <br>
+        
+          <div id="div6">
+            <h1 style="background-color:rgb(87,190,186,255);" class="CopyAI">CopyAI</h1>
+            <img src="Images/copyAI.jpg" height="200px">
+        <p class="CopyAI"> Copy.ai is a website that provides an AI-powered writing assistant for various use cases. The website's main focus is to help people generate high-quality written content quickly and easily. Here are some of the features and offerings of Copy.ai:
+        
+          <br>
+        
+        
+          Content generation: Copy.ai can generate a wide range of written content, including product descriptions, landing pages, email subject lines, social media posts, and more. Users can input a few keywords or prompts, and the AI-powered writing assistant will generate multiple options for them to choose from.
+          
+          Language translation: Copy.ai can translate written content into multiple languages. This feature can help users create content for a global audience without needing to know multiple languages themselves.
+          
+          Tone and style suggestions: Copy.ai can provide suggestions for the tone and style of written content based on the intended audience and purpose. This feature can help users tailor their writing to different contexts and improve engagement with readers.
+          
+          Custom branding: Copy.ai allows users to create custom branding templates, including logos, slogans, and taglines, to use in their written content.
+          
+          Overall, Copy.ai is a useful tool for individuals and businesses looking to generate high-quality written content quickly and easily, without the need for extensive writing skills or experience.
+        
+        <br>
+        <br>
+        <br>
+        <a href="https://www.copy.ai/"  class="aiLink" target="_blank"> Visit CopyAI's website!</a>
+        
+        
+        </p>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        
+        <div id="div6">
+        
+        
+        
+        
+        
+        
+        
+        
+        </div>
+        </html>
 
-<a href="https://magicstudio.com/magiceraser" target="_blank"> Visit MagicEraser's website!</a>
-
-<br>
-<br>
-<br>
 
 
-  </p>
-
-
-
-
-</div>
-
-
-
-
-<div id="div5">
-<h1 style="background-color:rgb(47, 61, 189);" class="tinywow">TinyWow</h1>
-<img src="Images/tinywow.jpg" height="200px">
-<p class="tinywow">TinyWow offers a huge selection of free, easy-to-use tools for PDF files, videos, images, and more. Convert word documents to PDF files, remove the background from an image, convert videos to GIF files, make memes, sharpen images, etc. 
-<br>
-    An heaven for people that have to deal with different types of files on daily bases. The best thing about this website is that it shares its AI with its users for free which is amazing. but there's a question here. if it's a free to use website how do they make money? there's no ads or anything, do they sell data? well Their own site states "TinyWow is free. We don't have ads, we don't sell data. We currently have no plans to monetize. Why offer these tools for free? We operate two tech websites: Alphr & TechJunkie. We thought our users might find these tools helpful. For now, utilizing our existing infrastructure we are able to operate these tools at minimal additional cost. Building this and watching the growth has been fun, so we’re going to keep building free stuff.
-<br>
-    I'll leave that up to your discretion.
-<br>
-<br>
-<br>
-    <a href="https://tinywow.com/" target="_blank"> Visit TinyWow's website!</a>
-    
-</p>
-</div>
-
-
-  <br>
-  <br>
-  <br>
-
-  <div id="div6">
-    <h1 style="background-color:rgb(87,190,186,255);" class="CopyAI">CopyAI</h1>
-    <img src="Images/copyAI.jpg" height="200px">
-<p class="CopyAI"> Copy.ai is a website that provides an AI-powered writing assistant for various use cases. The website's main focus is to help people generate high-quality written content quickly and easily. Here are some of the features and offerings of Copy.ai:
-
-  <br>
-
-  Content generation: Copy.ai can generate a wide range of written content, including product descriptions, landing pages, email subject lines, social media posts, and more. Users can input a few keywords or prompts, and the AI-powered writing assistant will generate multiple options for them to choose from.
+ 
+        </form>
+      </div>
+    </div>
+  </div>
   
-  Language translation: Copy.ai can translate written content into multiple languages. This feature can help users create content for a global audience without needing to know multiple languages themselves.
-  
-  Tone and style suggestions: Copy.ai can provide suggestions for the tone and style of written content based on the intended audience and purpose. This feature can help users tailor their writing to different contexts and improve engagement with readers.
-  
-  Custom branding: Copy.ai allows users to create custom branding templates, including logos, slogans, and taglines, to use in their written content.
-  
-  Overall, Copy.ai is a useful tool for individuals and businesses looking to generate high-quality written content quickly and easily, without the need for extensive writing skills or experience.
 
-<br>
-<br>
-<br>
-<a href="https://www.copy.ai/" target="_blank"> Visit CopyAI's website!</a>
-
-
-</p>
 </div>
-
-<br>
-<br>
-<br>
-
-<div id="div6">
-
-
-
-
-
-
 
 
 </div>
-</html>
+<footer id="about" class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+ 
+
+  <p class="w3-medium"> made by ND <a href="" target="_blank"></a></p>
+</footer>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html> 
+
+
+
+
